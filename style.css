@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+.canvas {
+    background-color:#121517;
+    padding:10px;
+    display:flex;
+}
+.titlepage {
+    box-sizing: border-box;
+    display: block;
+    text-align:center;
+    padding-top: 50px;
+}
+
+.container {
+    display:block;
+    max-width:900px;
+    flex-grow:2;
+}
+
+.leftmainspacer {
+    display:block;
+    min-width:50px;
+    flex-grow:1;
+}
+.rightmainspacer {
+    display:block;
+    min-width:50px;
+    flex-grow:1;
+}
+
+.title {
+    font-family:"Merriweather";
+    text-align: center;
+    color:#b90f09;
+}
+
+.motto {
+    font-family:"Merriweather";
+    text-align:center;
+    color:#d74742;
+    letter-spacing: 1.2px;
+    word-spacing: 4px;
+}
+
+.c1 {
+    display:block;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height:100px;
+}
+
+.start {
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    border:#5e0e0b 2px solid;
+    border-radius: 30px;
+    align-self: center;
+    justify-self: center;
+    background-color:#5e0e0b;
+    padding:18px;
+    margin:0;
+}
+
+.start:hover {
+    background-color:#2f0807;
+}
+
+a {
+    font-family:"Merriweather";
+    color:#ff7a7a;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#ff312a;
+}
+
+p {
+    color:#c3bdbc;
+    font-family:helvetica;
+    font-size: 17px;
+    line-height:27px;
+}
+
+.img {
+    text-align:center;
+    margin:0;
+    padding-top:20px;
+}
+
+h2 {
+    color:#c3322d;
+    font-family: "Merriweather";
+    padding-top: 40px;
+}
+
+h1 {
+    color:#a80b05;
+    font-family:"Merriweather";
+    text-align:center;
+    padding-top:60px;
+}
+
+#introblurb {
+    text-align: center;
+    font-family:"Merriweather";
+    font-size:13px;
+    color:#937e7b;
+    padding-top:20px;
+    padding-bottom:0;
+}
+
+.navbar {
+    display:block;
+    box-sizing:border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    display:flex;
+    justify-content:center;
+    background-color:#5f0e00;
+    height:30px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    padding:80px;
+}
+
+.caption {
+    font-size: 12px;
+    padding-bottom:20px;;
+    margin:0;
+}
+
+#subheading {
+    font-size:25px;
+    padding-bottom:40px;
+    line-height:35px;
+    color:#a97474
+}
+
+.spacer {
+    height:80px;
+}
+
+#toolslist {
+    background-color:#121517;
+    display:flex;
+    padding-top:60px;
+}
