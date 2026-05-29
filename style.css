@@ -4,6 +4,7 @@
     background-color:#121517;
     padding:10px;
     display:flex;
+    justify-content:center;
 }
 .titlepage {
     box-sizing: border-box;
