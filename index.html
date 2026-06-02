@@ -1,36 +1,198 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel='stylesheet' href='style.css'>
-    </head>
-    <body class="canvas">
-        <div class="leftmainspacer"></div>
-        <div class="container">
-            <div class="navbar">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./toolbox.html">Toolbox</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="titlepage">
-                <img src="./images/dustopedia.png" width="400px">
-            </div>
-            <h1 class="title">
-                dustopedia
-            </h1>
-            <h5 class="motto">
-                Bite-sized basics of redstone
-            </h5>
-            <p id="introblurb">
-                This site offers short explanations of each redstone component without any fluff or unnecessary jargon. It's aimed at those who don't wish to learn all there is to know about redstone engineering, but are interested in a bit of casual redstone to spruce up their builds or to get a quick peek into the world of redstone.
-            </p>
-            <div class="c1">
-                <h4>
-                    <a href="toolbox.html" class="start">Start looking through the toolbox.</a>
-                </h4>
-            </div>
-        </div>
-        <div class="rightmainspacer"></div>
-    </body>
+<head>
+  <title>Dustopedia</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    * {
+      margin:0;
+      padding:0;
+    }
+
+    .canvas {
+      background: url("./dustbackground.png");
+      height:100vh;
+      background-size:cover;
+      background-position:center;
+      background-color:black;
+    }
+
+    .navbarcontainer{
+      display:flex;
+    }
+
+    .navbar {
+      display:flex;
+      width: 100vw;
+      justify-content:space-evenly;
+      padding-top: 40px;
+      flex: 1;
+    }
+
+    a {
+      font-family:"Open Sans";
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 3px;
+      color:rgb(151, 31, 31);
+      text-decoration:none;
+      transition: 0.3s;
+      background-image: linear-gradient(180deg,rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%), linear-gradient(180deg,rgba(77, 6, 6, 1) 100%, rgba(77, 6, 6, 1) 100%);;
+      background-size: 100% 2px, 100% 2px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+    a:hover {
+      color:rgb(221, 62, 62);
+      background-size:
+      0 2px,
+      100% 2px;
+    }
+
+    .navbartitle {
+      flex:1.5;
+    }
+
+    .titlecontent {
+      display:grid;
+      grid-template-columns: repeat(12, [col-start] 1fr);
+    }
+
+    @media (min-width:320px) {
+      .title {
+        grid-column: col-start 2 / span 10;
+        padding-top: 90px;
+        padding-left: 20px;
+        text-align:center;
+      }
+
+      .title h1 {
+        font-family: "Open Sans";
+        font-weight: 200;
+        font-size: 20px;
+        color: rgb(145, 14, 38);
+
+      }
+
+      .title h2 {
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 11px;
+        color: rgb(148, 89, 84);
+        letter-spacing: 3px;
+
+      }
+    }
+
+    @media (min-width:480px) {
+      .title {
+        grid-column: col-start 2 / span 10;
+        padding-top: 90px;
+        padding-left: 20px;
+        text-align:center;
+      }
+
+      .title h1 {
+        font-family: "Open Sans";
+        font-weight: 200;
+        font-size: 50px;
+        color: rgb(145, 14, 38);
+
+      }
+
+      .title h2 {
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 15px;
+        color: rgb(148, 89, 84);
+        letter-spacing: 3px;
+
+      }
+    }
+
+    @media (min-width:600px) {
+      .title {
+        grid-column: col-start 7 / span 5;
+        padding-top: 120px;
+        padding-left: 20px;
+      }
+
+      .title h1 {
+        font-family: "Open Sans";
+        font-weight: 200;
+        font-size: 50px;
+        color: rgb(145, 14, 38);
+
+      }
+
+      .title h2 {
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 15px;
+        color: rgb(148, 89, 84);
+        letter-spacing: 3px;
+
+      }
+    }
+
+    @media (min-width:950px) {
+      .title {
+        grid-column: col-start 7 / span 4;
+        padding-top: 200px;
+        padding-left: 50px;
+      }
+
+      .title h1 {
+        font-family: "Open Sans";
+        font-weight: 200;
+        font-size: 80px;
+        color: rgb(145, 14, 38);
+
+      }
+
+      .title h2 {
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 20px;
+        color: rgb(148, 89, 84);
+        letter-spacing: 3px;
+
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="canvas">
+    <div class="navbarcontainer">
+      <ul class="navbar">
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="toolbox.html">Toolbox</a>
+        </li>
+      </ul>
+      <div class="navbartitle">
+        
+      </div>
+    </div>
+    <div class="titlecontent">
+      <div class="title">
+        <h1>
+          Dustopedia
+        </h1>
+        <br>
+        <h2>
+          A compendium of fundamental redstone knowledge
+        </h2>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
 </html>
