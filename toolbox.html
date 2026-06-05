@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel='stylesheet' href='style.css'>
+        <link rel='stylesheet' href='toolbox.css'>
+        <link rel="stylesheet" href="navbar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="canvas">
-        <div class="leftmainspacer"></div>
-        <div class="container">
-            <div class="navbar">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./toolbox.html">Toolbox</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <h1>
-                Click on the component you'd like to learn more about. If you're not sure where to begin, start from the redstone dust.
-            </h1>
-            <div>
-                <ul id="toolslist">
-                    <li><a href="./redstonedust.html">Redstone Dust</a></li>
-                    <li><a href="./redstonetorch.html">Redstone Torch</a></li>
-                </ul>
-            </div>
+        <div class="navbarcontainer">
+            <ul class="navbar">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a id="active" href="toolbox.html">Toolbox</a>
+            </li>
+            </ul>
+            <div class="navbarspacer"></div>
         </div>
-        <div class="rightmainspacer"></div>
+
+        <div class="selectquery">
+            <h1>
+                Select your component:
+            </h1>
+        </div>
     </body>
 </html>
