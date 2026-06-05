@@ -1,43 +1,44 @@
-<!DOCTYPE html>
-<head>
-  <title>Dustopedia | Home</title>
-  <link href="titlepage.css" rel="stylesheet">
-  <link href="navbar.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+.navbarcontainer {
+  display: flex;
+}
 
-  <div class="canvas">
-    <div class="navbarcontainer">
-        <ul class="navbar">
-          <li>
-            <a id="active" href="home">Home</a>
-          </li>
-          <li>
-            <a href="about">About</a>
-          </li>
-          <li>
-            <a href="toolbox">Toolbox</a>
-          </li>
-        </ul>
-        <div class="navbarspacer"></div>
-      </div>
-    <div class="titlecontent">
-      <div class="titlespacerleft"></div>
-      <div class="title">
-        <h1>
-          Dustopedia
-        </h1>
-        <br>
-        <h2>
-          A compendium of fundamental redstone knowledge
-        </h2>
-      </div>
-      <div class="titlespacerright"></div>
-    </div>
-  </div>
+.navbarspacer {
+  flex: 1;
+}
 
-</body>
+.navbar {
+  display:flex;
+  width: 100vw;
+  justify-content:space-evenly;
+  padding-top: 40px;
+  flex: 1;
+  list-style-type: none;
+}
 
+li a {
+  font-family:"Open Sans";
+  font-weight: 400;
+  font-size: calc(14px + 0.6vw);
+  letter-spacing: 3px;
+  color:rgb(214, 38, 38);
+  text-decoration:none;
+  transition: 0.3s;
+  background-image: linear-gradient(180deg,rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%), linear-gradient(180deg,rgb(179, 13, 13) 100%, rgb(117, 0, 0) 100%);;
+  background-size: 100% 2px, 100% 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat, no-repeat;
+}
 
-</html>
+li {
+  padding: 0 15px;
+}
+
+li a:hover {
+  background-size:
+  0 2px,
+  100% 2px;
+}
+
+#active {
+  font-weight:bolder;
+}
