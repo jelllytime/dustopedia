@@ -32,7 +32,7 @@
   font-weight: 100;
   color: rgb(196, 105, 97);
   letter-spacing: 3px;
-  font-size: calc(16px + 0.75vw);
+  font-size: calc(14px + 0.8vw);
 }
 
 .titlespacerleft {
@@ -42,10 +42,4 @@
 
 .titlespacerright {
   width: 80px;
-}
-
-@media screen and (max-width: 600px) {
-  .title h1 {
-    font-size: calc(60px - 3vw);
-  }
 }
