@@ -29,11 +29,13 @@
   padding-top:10vh;
   padding-right:10vw;
   padding-left: 10vw;
+  flex:9;
+  max-width:90vw;
 }
 
 .containerspacerright {
-  min-width: 10vw;
-  flex-grow: 5;
+  flex:1;
+  min-width:10vw;
 }
 
 .abouth1 {
