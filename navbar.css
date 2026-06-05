@@ -15,7 +15,7 @@
   list-style-type: none;
 }
 
-a {
+li a {
   font-family:"Open Sans";
   font-weight: 400;
   font-size: calc(14px + 0.6vw);
@@ -33,7 +33,7 @@ li {
   padding: 0 15px;
 }
 
-a:hover {
+li a:hover {
   background-size:
   0 2px,
   100% 2px;
