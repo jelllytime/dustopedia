@@ -35,9 +35,9 @@
 }
 
 #rsdust {
-  height: clamp(50px, calc(80px - 3vw), 80px);
+  height: 60px;
 }
 
 #rstorch {
-  height: clamp(100px, calc( 140px - 3vw), 140px);
+  height: 120px;
 }
