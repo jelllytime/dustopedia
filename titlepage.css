@@ -5,6 +5,18 @@
   padding:0;
 }
 
+@media screen and (min-width: 400px) {
+  .title h1 {
+    font-size: calc(60px - 3vw);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .title h1 {
+    font-size: calc(20px + 3vw);
+  }
+}
+
 .canvas {
   background: url("./dustbackground.png");
   min-height:800px;
@@ -24,7 +36,6 @@
   color: rgb(191, 19, 51);
   font-family: "Open Sans";
   font-weight: 300;
-  font-size: calc(16px + 4vw);
 }
 
 .title h2 {
