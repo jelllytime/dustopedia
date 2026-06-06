@@ -70,8 +70,8 @@ img:hover {
 .changelog {
   box-sizing:border-box;
   border: 1px rgb(119, 97, 97) solid;
-  margin-left:10vw;
-  margin-right:10vw;
+  margin-left:20vw;
+  margin-right:20vw;
   padding:30px;
 }
 
@@ -94,7 +94,10 @@ img:hover {
   padding-right:10px;
 }
 .changelog ul {
-  padding: 5px 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 6px;
+  padding-right:10px;
 }
 
 .changelog li {
