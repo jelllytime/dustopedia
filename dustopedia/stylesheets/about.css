@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  font-family: "Exo";
 }
 
 .canvas {
-  background: url("./torchbg.png");
+  background: url("./backgrounds/torchbg.png");
   min-height:800px;
   min-width:100vw;
   height:fit-content;
@@ -40,21 +40,25 @@
 
 .abouth1 {
   color: rgb(221, 10, 48);
-  font-weight: 200;
+  font-weight: 400;
   padding: 40px 0px;
-  font-size: calc(20px + 3vw);
+  font-size: calc(20px + 2vw);
 }
 
 #creator {
-  font-size: calc(15px + 2vw);
+  font-size: calc(15px + 1.6vw);
 }
 
 .aboutparagraph {
   color:rgb(189, 162, 162);
   line-height: 30px;
   padding-bottom:40px;
-  font-weight:100;
+  font-weight:200;
   font-size: calc(18px - 0.1vw);
+}
+
+#emphasis {
+  color:rgb(215, 128, 117);
 }
 
 footer {
