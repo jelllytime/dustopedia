@@ -16,7 +16,7 @@
 }
 
 .container {
-  padding: calc(30px + 2vh) 16vw;
+  padding: calc(30px + 2vh) calc(8px + 15vw);
 }
 
 p {
