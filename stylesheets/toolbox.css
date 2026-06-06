@@ -23,6 +23,16 @@
   text-align:center;
 }
 
+h3 {
+  font-family:"Exo";
+  color:rgb(154, 135, 135);
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  font-weight:300;
+  text-align:center;
+  padding-top: 30px;
+}
+
 .selectquery {
   padding: 90px 30px 20px 20px;
 }
