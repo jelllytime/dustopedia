@@ -29,18 +29,21 @@
 
 .toolboxiconscontainer {
   display:block;
-  padding: 30px;
+  padding: 10vw;
   margin:0 auto;
-  width:fit-content;
+  width:80%;
 }
 
 .toolboxicons{
   display:flex;
-  justify-content:space-evenly;
+  justify-content:center;
   align-items:baseline;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 img {
   padding-left: 10px;
   padding-right:10px;
+  display:inline-block;
 }
