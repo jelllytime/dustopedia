@@ -7,7 +7,7 @@
 }
 
 .canvas {
-  background: url("./backgrounds/torchbg.png");
+  background: url("/backgrounds/torchbg.png");
   min-height:800px;
   min-width:100vw;
   height:fit-content;

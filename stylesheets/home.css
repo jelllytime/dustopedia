@@ -6,7 +6,7 @@
 }
 
 .canvas {
-  background: url("./backgrounds/dustbackground.png");
+  background: url("/backgrounds/dustbackground.png");
   min-height:800px;
   min-width:100vw;
   height:100vh;
