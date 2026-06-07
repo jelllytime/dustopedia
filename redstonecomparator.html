@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Redstone Comparator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='/stylesheets/navbar.css'>
+        <link rel="stylesheet" href="/stylesheets/page.css">
+        <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+    </head>
+    <body class="canvas"> 
+        <div class="navbarcontainer">
+            <ul class="navbar">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="toolbox.html">Toolbox</a>
+            </li>
+            </ul>
+            <div class="imgcontainer">
+                <img class="activated" src="/icons/prism_1.png">
+                <img src="/icons/prism_0.png">
+            </div>
+        </div>
+        <div class="container">
+
+            <div>
+                <h1>
+                    Redstone Comparator
+                </h1>
+                <p id="subheading">
+                    Comparators are incredibly useful blocks for many circuits, but they can be a little confusing at first. Don't worry: this section will not go into the details and equations about how comparators work. It will only introduce the basic concepts behind comparators.
+                </p>
+                <h2>
+                    Modes
+                </h2>
+                <p>
+                    Comparators have two toggleable modes: comparison mode and subtraction mode. To change between modes, right click (or with whichever button you set as your "use" button) the comparator. If the torch is off, it is in comparison mode. If the torch is on, it is in subtraction mode.
+                    <br><br>
+                    If there is only one input in the back, the output will be the same as the input regardless of what mode the comparator is in. This is unlike repeaters, which always output signals at full strength.
+                </p>
+                <div class="img">
+                    <img src="/images/comparator1.png">
+                    <p class="caption">
+                        Starting from the redstone torches on the far right, the signal strength is 15, or full power. When it reaches the backs of the comparators, it is at power level 14. The comparators, in different modes, both output power level 14 from their fronts, as seen by how the lamps 14 blocks away can be lit, but the lamps 15 blocks away stay unlit.
+                    </p>
+                </div>
+                <p>
+                    Comparators can also be used to measure blocks. More information can be found online about the exact signal levels comparators will output based on what they measure. Comparators can also measure blocks through an opaque, conductive block (more on conductivity in the Redstone Dust section).
+                </p>
+                <div class="img">
+                  <img src="/images/comparator2.png">
+                  <p class="caption">
+                    The chest in the back has nothing in it, and the comparator outputs no signal. The chest in the front is full of wheat, and the comparator now outputs a signal based on what it measures. Different "fullness" results in different signal strength outputs.
+                  </p>
+                </div>
+                <h2>
+                    Comparison Mode
+                </h2>
+                <p>
+                    In comparison mode, with the front torch unpowered, the comparator will compare its input from its back with inputs from its two sides. As long as the side inputs are both weaker signals than the back input, the comparator will continue to output the same signal as its back input. However, if either side input is stronger than the back input, the comparator turns off.
+                </p>
+                <h2>
+                    Subtraction Mode
+                </h2>
+                <p>
+                    In subtraction mode, the front torch is powered and lit. The comparator will subtract the power level of the stronger side input from its back input.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
